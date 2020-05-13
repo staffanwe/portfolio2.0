@@ -42,7 +42,7 @@
     margin: 0 auto;
     position: absolute;
     bottom: -30px;
-    left: 47.5%;
+    left: calc(50% - 36px);
 }
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -106,4 +106,8 @@
     100% {
         transform: translateY(5px);
     }
+}
+
+.link-about:hover {
+    cursor: pointer;
 }

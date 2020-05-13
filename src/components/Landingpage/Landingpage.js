@@ -5,6 +5,7 @@ import Github from '../../images/github.svg';
 import LinkedIn from '../../images/linkedin.svg';
 import Instagram from '../../images/instagram.svg';
 import Down from '../../images/down.svg';
+import { Link } from 'react-scroll';
 
 const Landingpage = (props) => {
     return (
@@ -58,9 +59,14 @@ const Landingpage = (props) => {
                     <p className="learn-more">
                         Learn more about me and what I do...
                     </p>
-                    <a href="www.google.se">
+                    <Link
+                        className="link-about"
+                        to="about"
+                        smooth={true}
+                        duration={800}
+                    >
                         <img src={Down} alt="down" className="arrow-down"></img>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
