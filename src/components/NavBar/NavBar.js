@@ -12,14 +12,14 @@ const NavBar = (props) => {
                 <h2 className="projects-link"> Projects</h2>
                 <h2 className="contact-link">Contact</h2>
             </div>
-            <div className="logo-wrapper">
+            <div className="logo-navbar-wrapper">
                 <Link
                     className="link-about"
                     to="landing"
                     smooth={true}
                     duration={800}
                 >
-                    <img className="logo" src={Logo} alt="logo"></img>
+                    <img className="logo-navbar" src={Logo} alt="logo"></img>
                 </Link>
             </div>
         </div>

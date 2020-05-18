@@ -50,7 +50,7 @@
         margin: 0 auto;
         position: absolute;
         bottom: -45px;
-        left: 42%;
+        left: calc(50% - 34px);
     }
 }
 .info-box {

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Landingpage from './components/Landingpage/Landingpage';
 import About from './components/About/About';
 import { Scroll } from 'react-fns';
 import { WindowSize } from 'react-fns';
 import NavBar from './components/NavBar/NavBar';
+import Aos from 'aos';
 
 function App() {
     function Hello(props) {
@@ -14,6 +15,9 @@ function App() {
             return <div></div>;
         }
     }
+    useEffect(() => {
+        Aos.init({});
+    }, []);
     return (
         <div>
             <Scroll
