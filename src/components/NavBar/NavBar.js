@@ -2,10 +2,12 @@ import React from 'react';
 import './NavBar.css';
 import Logo from '../../images/Logo.png';
 import { Link } from 'react-scroll';
+import Drawer from '../Drawer/Drawer';
 
 const NavBar = (props) => {
     return (
         <div className="navbar">
+            <Drawer />
             <div className="navbar-links">
                 <h2 className="about-link">About</h2>
                 <h2 className="skills-link">Skills</h2>
