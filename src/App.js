@@ -6,6 +6,7 @@ import { Scroll } from 'react-fns';
 import { WindowSize } from 'react-fns';
 import NavBar from './components/NavBar/NavBar';
 import Aos from 'aos';
+import Skills from './components/Skills/Skills';
 
 function App() {
     function Hello(props) {
@@ -35,6 +36,7 @@ function App() {
             />
             <Landingpage />
             <About />
+            <Skills />
         </div>
     );
 }

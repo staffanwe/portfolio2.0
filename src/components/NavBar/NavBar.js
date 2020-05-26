@@ -9,10 +9,38 @@ const NavBar = (props) => {
         <div className="navbar">
             <Drawer />
             <div className="navbar-links">
-                <h2 className="about-link">About</h2>
-                <h2 className="skills-link">Skills</h2>
-                <h2 className="projects-link"> Projects</h2>
-                <h2 className="contact-link">Contact</h2>
+                <Link
+                    className="link-about"
+                    to="about"
+                    smooth={true}
+                    duration={800}
+                >
+                    <h2 className="about-link">About</h2>
+                </Link>
+                <Link
+                    className="link-about"
+                    to="skills"
+                    smooth={true}
+                    duration={800}
+                >
+                    <h2 className="skills-link">Skills</h2>
+                </Link>
+                <Link
+                    className="link-about"
+                    to="projects"
+                    smooth={true}
+                    duration={800}
+                >
+                    <h2 className="projects-link"> Projects</h2>
+                </Link>
+                <Link
+                    className="link-about"
+                    to="contact"
+                    smooth={true}
+                    duration={800}
+                >
+                    <h2 className="contact-link">Contact</h2>
+                </Link>
             </div>
             <div className="logo-navbar-wrapper">
                 <Link
