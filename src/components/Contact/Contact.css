@@ -1,0 +1,22 @@
+.contact {
+    background-color: #e9e9e9;
+    min-height: 100vh;
+    height: 100%;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .contact {
+        background-color: #e9e9e9;
+        height: 100%;
+    }
+}
+.contact-header {
+    text-align: center;
+}
+.contact-header h1 {
+    margin: 0;
+    padding-top: 7rem;
+    font-size: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}

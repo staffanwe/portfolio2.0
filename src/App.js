@@ -7,6 +7,8 @@ import { WindowSize } from 'react-fns';
 import NavBar from './components/NavBar/NavBar';
 import Aos from 'aos';
 import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 function App() {
     function Hello(props) {
@@ -37,6 +39,8 @@ function App() {
             <Landingpage />
             <About />
             <Skills />
+            <Projects />
+            <Contact />
         </div>
     );
 }
