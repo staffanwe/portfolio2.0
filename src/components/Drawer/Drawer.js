@@ -12,6 +12,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import StarsIcon from '@material-ui/icons/Stars';
 import WorkIcon from '@material-ui/icons/Work';
 import MailIcon from '@material-ui/icons/Mail';
+import HomeIcon from '@material-ui/icons/Home';
 import { Link } from 'react-scroll';
 
 import '../NavBar/NavBar.css';
@@ -52,12 +53,14 @@ export default function TemporaryDrawer() {
         // eslint-disable-next-line default-case
         switch (index) {
             case 0:
-                return <AccountCircleIcon />;
+                return <HomeIcon />;
             case 1:
-                return <StarsIcon />;
+                return <AccountCircleIcon />;
             case 2:
-                return <WorkIcon />;
+                return <StarsIcon />;
             case 3:
+                return <WorkIcon />;
+            case 4:
                 return <MailIcon />;
         }
     }
@@ -66,12 +69,14 @@ export default function TemporaryDrawer() {
         // eslint-disable-next-line default-case
         switch (index) {
             case 0:
-                return 'about';
+                return 'landing';
             case 1:
-                return 'skills';
+                return 'about';
             case 2:
-                return 'projects';
+                return 'skills';
             case 3:
+                return 'projects';
+            case 4:
                 return 'contact';
         }
     }
@@ -86,7 +91,7 @@ export default function TemporaryDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['About me', 'Skills', 'Projects', 'Contact'].map(
+                {['Home', 'About me', 'Skills', 'Projects', 'Contact'].map(
                     (text, index) => (
                         <Link
                             className="link-about"

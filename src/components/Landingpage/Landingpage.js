@@ -20,7 +20,7 @@ const Landingpage = (props) => {
                     </div>
                 </div>
                 <div className="info-box">
-                    <h3>Software Developer from the deepest of forrests</h3>
+                    <h3>Software Developer from the north</h3>
                     <div className="social-links">
                         <a
                             href="https://github.com/staffanwe"
