@@ -19,6 +19,10 @@ const useStyles = makeStyles({
         },
         '& .MuiOutlinedInput-root': {
             width: '25rem',
+            ['@media (max-width:780px)']: {
+                // eslint-disable-line no-useless-computed-key
+                width: '72vw',
+            },
             backgroundColor: '#fff',
             '& fieldset': {
                 borderColor: '#ACACAC',
