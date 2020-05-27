@@ -3,7 +3,6 @@ import './Contact.css';
 import { TextField, makeStyles, Button, Typography } from '@material-ui/core';
 import Plane from '../../icons/send-plane.svg';
 import emailjs from 'emailjs-com';
-import Footer from '../Footer/Footer';
 
 const useStyles = makeStyles({
     textField: {
@@ -19,8 +18,9 @@ const useStyles = makeStyles({
         },
         '& .MuiOutlinedInput-root': {
             width: '25rem',
+
+            // eslint-disable-line no-useless-computed-key
             ['@media (max-width:780px)']: {
-                // eslint-disable-line no-useless-computed-key
                 width: '72vw',
             },
             backgroundColor: '#fff',
