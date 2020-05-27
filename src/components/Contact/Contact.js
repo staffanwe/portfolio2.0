@@ -157,7 +157,6 @@ const Contact = (props) => {
                     </Typography>
                 </Button>
             </div>
-            <Footer />
         </section>
     );
 };
