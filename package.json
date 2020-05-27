@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "aos": "^2.3.4",
     "clsx": "^1.1.0",
+    "emailjs-com": "^2.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-fns": "^1.4.0",

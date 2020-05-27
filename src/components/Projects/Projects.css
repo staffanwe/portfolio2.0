@@ -21,3 +21,70 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
 }
+
+.project-box {
+    width: 450px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.project-image {
+    height: 120%;
+    width: auto;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 6rem;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+}
+
+.projects-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #0c0c0d;
+}
+.project-box:hover .overlay {
+    opacity: 0.95;
+}
+.text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    text-align: left;
+    width: 70%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.text h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+}
