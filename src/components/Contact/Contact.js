@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 import React, { useState } from 'react';
 import './Contact.css';
 import { TextField, makeStyles, Button, Typography } from '@material-ui/core';
