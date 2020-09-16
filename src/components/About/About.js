@@ -17,7 +17,7 @@ const About = (props) => {
                 <div className="text-container">
                     <h1 className="text-container-h1">My name is Staffan,</h1>
                     <p className="text-container-p">
-                        and I am a student currently studying my third year at
+                        and I am a student currently studying my fourth year at
                         Umeå University to get a Master of Science degree in
                         Interaction Technology and Design and a bachelors degree
                         in Computer Science. Originally I'm from a city in
