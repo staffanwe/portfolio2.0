@@ -46,7 +46,6 @@
     color: white;
     font-family: 'Kaushan Script', cursive;
     font-weight: 600;
-    text-shadow: 3px 3px 5px #000000;
     padding: 0;
   }
 }
@@ -66,7 +65,7 @@
     margin: 0 auto;
     position: absolute;
     bottom: -60px;
-    left: calc(50% - 34px);
+    left: calc(50% - 38px);
   }
 }
 .info-box {
