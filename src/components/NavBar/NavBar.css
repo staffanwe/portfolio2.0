@@ -1,98 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 .navbar {
-    background-color: #0c0c0d;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    height: 60px;
-    -webkit-animation: fadein 0.3s;
-    -moz-animation: fadein 0.3s; /* Firefox < 16 */
-    -ms-animation: fadein 0.3s; /* Internet Explorer */
-    -o-animation: fadein 0.3s; /* Opera < 12.1 */
-    animation: fadein 0.3s;
+  background-color: #1a446f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  height: 60px;
+  -webkit-animation: fadein 0.3s;
+  -moz-animation: fadein 0.3s; /* Firefox < 16 */
+  -ms-animation: fadein 0.3s; /* Internet Explorer */
+  -o-animation: fadein 0.3s; /* Opera < 12.1 */
+  animation: fadein 0.3s;
 }
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .test {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 .navbar-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 35%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 45%;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*='navbar-links'] {
-        display: none;
-    }
+  /* For mobile phones: */
+  [class*='navbar-links'] {
+    display: none;
+  }
 }
 
 .about-link {
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: 1rem;
 }
 .skills-link {
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    padding-left: 1.2rem;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: 2rem;
 }
 .projects-link {
-    padding-left: 2rem;
-    margin-left: 2rem;
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+  padding-left: 3rem;
+  margin-left: 2rem;
+
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
 }
 .contact-link {
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 .logo-navbar {
-    height: 60px;
+  height: 80px;
 }
 
 .logo-navbar-wrapper {
-    margin: 0 auto;
-    position: absolute;
-    bottom: -30px;
-    left: calc(50% - 36px);
+  margin: 0 auto;
+  position: absolute;
+  bottom: -40px;
+  left: calc(50% - 36px);
 }
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*='logo-navbar-wrapper'] {
-        margin: 0 auto;
-        position: absolute;
-        bottom: -30px;
-        left: calc(50% - 34px);
-    }
+  /* For mobile phones: */
+  [class*='logo-navbar-wrapper'] {
+    margin: 0 auto;
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% - 34px);
+  }
 }
 
 .drawer-wrapper {
-    margin: 0.4rem 0;
-    display: none;
+  margin: 0.4rem 0;
+  display: none;
 }
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*='drawer-wrapper'] {
-        margin: 0.4rem 0;
-        display: flex;
-    }
+  /* For mobile phones: */
+  [class*='drawer-wrapper'] {
+    margin: 0.4rem 0;
+    display: flex;
+  }
 }
