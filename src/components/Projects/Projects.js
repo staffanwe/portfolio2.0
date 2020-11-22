@@ -6,6 +6,8 @@ import WhoSkips from '../../images/Whoskips.png';
 import Annonser from '../../images/Annons.png';
 import Alumntorget from '../../images/Alumntorget.png';
 import Matchstats from '../../images/Matchfakta.PNG';
+import Paradox from '../../images/paradox_white.jpg';
+import IdApp from '../../images/id_app.png';
 
 const Projects = (props) => {
   useEffect(() => {
@@ -20,6 +22,18 @@ const Projects = (props) => {
       <div data-aos="fade-up" className="projects-container">
         <div className="projects-row">
           {[
+            {
+              title: 'Employee evaluation',
+              img: Paradox,
+              description:
+                'The goal of this project was to create an application to make employee evaluation easier and more efficient for the game development studio Paradox Arctic. Me and 4 of my friends accepted the challenge and created a web application in React. ',
+            },
+            {
+              title: 'Freshman app',
+              img: IdApp,
+              description:
+                'The freshman app is an application for first year students to get an easier way in to the new life of being a student. It is ment to be a part of the reception of the new students where things like the calendar of events, news from the older students, information about the city and more. It is prototyped and developed with figma and React Native. ',
+            },
             {
               title: 'Who Skips?',
               img: WhoSkips,

@@ -1,6 +1,10 @@
 .footer {
   height: 150px;
-  background-color: #1a446f;
+  background: linear-gradient(
+    to right,
+    #141e30,
+    #243b55
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .footer p {
   font-family: 'Source Sans Pro';
