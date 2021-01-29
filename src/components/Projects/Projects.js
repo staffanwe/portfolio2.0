@@ -41,23 +41,10 @@ const Projects = (props) => {
                 'Who skips is an application where League of Legends players can choose which players that has to skip a game if they are more than 5 players. It is an application built with the MERN stack where the stats about the players are stored in a database.',
             },
             {
-              title: 'Annonser',
-              img: Annonser,
-              description:
-                'Annonser is a full stack web application that runs on two servers. One for subscribers and one for ads and advertisers. Subscribers and companies can create an ad and put it on the website for anyone to see.',
-            },
-
-            {
               title: 'Alumntorget',
               img: Alumntorget,
               description:
                 'Alumntorget is a prototype that I together with some other students designed in a project for Umeå University. It is an application for alumnis at the university to easier get in touch with each other and to continuing their connection to the school. ',
-            },
-            {
-              title: 'Score predictor',
-              img: Matchstats,
-              description:
-                'Score predictor is a simple application developed in ASP .NET Core MVC. In the application the user can choose two teams and simulate a game between the two teams and get the match stats from it. The application is communicating with a MySQL database.',
             },
           ].map((project, index) => (
             <div className="project-box">
