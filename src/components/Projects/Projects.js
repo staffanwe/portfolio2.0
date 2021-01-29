@@ -3,9 +3,7 @@ import Aos from 'aos';
 import '../../../node_modules/aos/dist/aos.css';
 import './Projects.css';
 import WhoSkips from '../../images/Whoskips.png';
-import Annonser from '../../images/Annons.png';
 import Alumntorget from '../../images/Alumntorget.png';
-import Matchstats from '../../images/Matchfakta.PNG';
 import Paradox from '../../images/paradox_white.jpg';
 import IdApp from '../../images/id_app.png';
 
