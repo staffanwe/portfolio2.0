@@ -17,10 +17,9 @@ const About = (props) => {
                 <div className="text-container">
                     <h1 className="text-container-h1">My name is Staffan,</h1>
                     <p className="text-container-p">
-                        and I am a student currently studying my fourth year at
+                        and I am a student currently studying my fifth year at
                         Umeå University to get a Master of Science degree in
-                        Interaction Technology and Design and a bachelors degree
-                        in Computer Science. Originally I'm from a city in
+                        Interaction Technology and Design. Originally I'm from a city in
                         northern Sweden called Piteå but I moved when it was
                         time to start my education. I love to be creative and
                         solve problems and that is why I do what I do. I have
