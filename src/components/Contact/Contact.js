@@ -1,55 +1,55 @@
 /* eslint-disable no-useless-computed-key */
-import React, { useState } from 'react';
-import './Contact.css';
-import { TextField, makeStyles, Button, Typography } from '@material-ui/core';
-import Plane from '../../icons/send-plane.svg';
-import emailjs from 'emailjs-com';
+import React, { useState } from "react";
+import "./Contact.css";
+import { TextField, makeStyles, Button, Typography } from "@material-ui/core";
+import Plane from "../../icons/send-plane.svg";
+import emailjs from "emailjs-com";
 
 const useStyles = makeStyles({
   textField: {
-    margin: '0.3rem',
-    '& label': {
-      color: '#ACACAC',
+    margin: "0.3rem",
+    "& label": {
+      color: "#ACACAC",
     },
-    '& label.Mui-focused': {
-      color: '#ACACAC',
+    "& label.Mui-focused": {
+      color: "#ACACAC",
     },
-    '& .MuiInput-underline:after': {
-      borderBottomColor: '#fff',
+    "& .MuiInput-underline:after": {
+      borderBottomColor: "#fff",
     },
-    '& .MuiOutlinedInput-root': {
-      width: '25rem',
+    "& .MuiOutlinedInput-root": {
+      width: "25rem",
 
       // eslint-disable-line no-useless-computed-key
-      ['@media (max-width:780px)']: {
-        width: '72vw',
+      ["@media (max-width:780px)"]: {
+        width: "72vw",
       },
-      backgroundColor: '#fff',
-      '& fieldset': {
-        borderColor: '#ACACAC',
+      backgroundColor: "#fff",
+      "& fieldset": {
+        borderColor: "#ACACAC",
       },
-      '&:hover fieldset': {
-        borderColor: '#ACACAC',
+      "&:hover fieldset": {
+        borderColor: "#ACACAC",
       },
-      '&.Mui-focused fieldset': {
-        borderColor: '#ACACAC',
+      "&.Mui-focused fieldset": {
+        borderColor: "#ACACAC",
       },
     },
   },
   addButton: {
-    backgroundColor: '#fff',
-    color: '#000',
-    borderColor: '€ACACAC',
+    backgroundColor: "#fff",
+    color: "#000",
+    borderColor: "€ACACAC",
 
-    borderRadius: '20px',
-    margin: '0.4rem 0',
+    borderRadius: "20px",
+    margin: "0.4rem 0",
   },
 });
 
 const Contact = (props) => {
   const classes = useStyles();
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
   const [messageError, setMessageError] = useState(false);
 
@@ -73,13 +73,13 @@ const Contact = (props) => {
       isError = true;
     }
     if (!isError) {
-      var service_id = 'default_service';
-      var template_id = 'template_VhHfxn4A';
-      var user_id = 'user_XYrhv13HJdrAUmT3Q6QLq';
+      var service_id = "default_service";
+      var template_id = "template_VhHfxn4A";
+      var user_id = "user_XYrhv13HJdrAUmT3Q6QLq";
 
       emailjs.send(service_id, template_id, { from_name: email, message_html: message }, user_id);
-      setEmail('');
-      setMessage('');
+      setEmail("");
+      setMessage("");
     }
   }
 
@@ -89,7 +89,7 @@ const Contact = (props) => {
         <h1>Contact</h1>
       </div>
       <div data-aos="fade-up" className="contact-info">
-        <p>Something on you mind? Get in touch with me via a message down below or my social links!</p>
+        <p>Something on you mind? Get in touch with me via a message down below or through my social links!</p>
 
         <TextField
           error={error}
@@ -102,12 +102,12 @@ const Contact = (props) => {
           }}
           InputProps={{
             style: {
-              color: 'black',
-              fontFamily: 'Source Sans Pro',
+              color: "black",
+              fontFamily: "Source Sans Pro",
             },
           }}
           value={email}
-          helperText={error ? 'You must enter a valid email adress' : ''}
+          helperText={error ? "You must enter a valid email adress" : ""}
         ></TextField>
         <TextField
           error={messageError}
@@ -122,16 +122,16 @@ const Contact = (props) => {
           }}
           InputProps={{
             style: {
-              color: 'black',
-              fontFamily: 'Source Sans Pro',
+              color: "black",
+              fontFamily: "Source Sans Pro",
             },
           }}
           value={message}
-          helperText={messageError ? 'Please do not send me empty messages!' : ''}
+          helperText={messageError ? "Please do not send me empty messages!" : ""}
         ></TextField>
         <Button variant="contained" className={classes.addButton} onClick={sendMessage}>
           <img className="plane" src={Plane} alt=" "></img>
-          <Typography variant="button" style={{ padding: '0 0.4rem' }}>
+          <Typography variant="button" style={{ padding: "0 0.4rem" }}>
             Send
           </Typography>
         </Button>
