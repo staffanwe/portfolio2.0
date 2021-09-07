@@ -33,7 +33,7 @@ const Projects = (props) => {
                 "The freshman app is an application for first year students to get an easier way in to the new life of being a student. It is ment to be a part of the reception of the new students where things like the calendar of events, news from the older students, information about the city and more. It is prototyped and developed with figma and React Native. ",
             },
             {
-              title: "Team Divider?",
+              title: "Team Divider",
               img: TeamDivider,
               description:
                 "Team Divider is a web application where League of Legends players can choose how the participating players should be divided. It is an application built with the MERN stack where the stats about the players are stored in a database.",
