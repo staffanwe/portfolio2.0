@@ -1,5 +1,4 @@
 .projects {
-  background-color: #e9e9e9;
   min-height: 100vh;
   height: 100%;
 }
@@ -10,6 +9,13 @@
     height: 100%;
   }
 }
+.background {
+  background: url('../../images/background.png');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -999;
+}
 
 .projects-header {
   text-align: center;
@@ -18,15 +24,14 @@
   margin: 0;
   padding-top: 7rem;
   font-size: 35px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
 }
 
 .project-box {
-  width: 450px;
-  height: 280px;
+  width: 400px;
+  height: 250px;
   overflow: hidden;
-  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   display: flex;
@@ -40,13 +45,16 @@
   height: 100%;
   width: auto;
 }
+.project-image2 {
+  width: 100%;
+  height: auto;
+}
 
 .projects-container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 6rem;
-  width: 80%;
+  width: 90%;
   justify-content: center;
   text-align: center;
 }
@@ -55,6 +63,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 5rem;
 }
 
 .overlay {
@@ -83,9 +92,13 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .text h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
+}
+.overlay-button {
+  color: #fff;
+  background-color: white;
 }

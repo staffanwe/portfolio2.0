@@ -1,15 +1,12 @@
 .footer {
   height: 150px;
-  background: linear-gradient(
-    to right,
-    #141e30,
-    #243b55
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #d5c58f;
 }
 .footer p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.3rem;
-  color: #fff;
+  color: #423b3b;
+
   text-align: center;
   padding-top: 2rem;
   margin: 0;
@@ -25,7 +22,7 @@
   cursor: pointer;
 }
 .github-icon path {
-  fill: #fff;
+  fill: #423b3b;
 }
 .social-links {
   display: flex;
